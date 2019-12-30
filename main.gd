@@ -3,9 +3,9 @@ extends Spatial
 var direction = Vector3()
 
 func rotating(dir):
-#calilate the rotation
+#calculate the rotation
 	var a  = atan2(dir.x* -1, dir.z* -1)
-#calilate steps from rotation to rotation using lerp
+#calculate steps from rotation to rotation using lerp
 	var rot = $player.get_rotation()
 	if abs(rot.y-a) > PI:
 		var m = PI * 2
